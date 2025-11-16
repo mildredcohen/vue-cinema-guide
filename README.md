@@ -4,7 +4,7 @@
 
 ## 🚀 Demo
 
-[Ссылка на Cloudflare Pages/Netlify]
+[**View Live Demo**](https://vue-cinema-guide.netlify.app/)
 
 ## 🛠️ Technologies
 
