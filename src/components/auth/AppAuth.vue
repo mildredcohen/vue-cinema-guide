@@ -104,8 +104,7 @@
       })
 
       closeModal()
-    } catch (error) {
-      console.error('❌ Ошибка входа:', error)
+    } catch {
       errorMessage.value = 'Неверный email или пароль'
     }
   }
@@ -133,8 +132,7 @@
       }
 
       mode.value = 'success'
-    } catch (error) {
-      console.error('❌ Ошибка регистрации:', error)
+    } catch {
       errorMessage.value = 'Пользователь с такой почтой уже существует'
     }
   }
@@ -148,10 +146,10 @@
 
         closeModal()
       } catch (error) {
-        console.error('❌ Ошибка автоматического входа:', error)
+        console.error('Ошибка автоматического входа:', error)
       }
     } else {
-      console.error('❌ Нет данных для автоматического входа')
+      console.error('Нет данных для автоматического входа')
     }
   }
 </script>

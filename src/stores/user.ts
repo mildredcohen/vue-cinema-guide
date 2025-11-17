@@ -51,7 +51,6 @@ export const useUserStore = defineStore('user', () => {
       await loadUserProfile()
       return result
     } catch (error) {
-      console.error('❌ Ошибка входа:', error)
       throw error
     } finally {
       isLoading.value = false
@@ -65,7 +64,6 @@ export const useUserStore = defineStore('user', () => {
 
       return result
     } catch (error) {
-      console.error('❌ Ошибка регистрации:', error)
       throw error
     } finally {
       isLoading.value = false
@@ -78,7 +76,6 @@ export const useUserStore = defineStore('user', () => {
       const userData = await authAPI.getProfile()
       setUser(userData)
     } catch (error) {
-      console.error('❌ Ошибка загрузки профиля:', error)
       clearUser()
       throw error
     } finally {
@@ -95,7 +92,6 @@ export const useUserStore = defineStore('user', () => {
         clearUser()
       }, 300)
     } catch (error) {
-      console.error('❌ Ошибка выхода:', error)
       throw error
     }
   }
@@ -104,8 +100,7 @@ export const useUserStore = defineStore('user', () => {
   const checkAuth = async () => {
     try {
       await loadUserProfile()
-    } catch (error) {
-      console.log('❌ Пользователь не авторизован:', error)
+    } catch {
       // Если не авторизован, просто очищаем состояние
       clearUser()
     }

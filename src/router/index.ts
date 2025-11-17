@@ -79,7 +79,7 @@ router.beforeEach(async (to, from, next) => {
 
   // Проверяем доступ после того как точно знаем статус авторизации
   if (to.meta.requiresAuth && !userStore.isAuthenticated) {
-    console.log('❌ Доступ запрещен, редирект на главную')
+    console.log('Доступ запрещен, редирект на главную')
     next('/')
   } else {
     next()

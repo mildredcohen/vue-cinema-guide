@@ -89,7 +89,7 @@
         userFavorites.value.push(props.movieId.toString())
       }
     } catch (error) {
-      console.error('❌ Ошибка работы с избранным:', error)
+      console.error('Ошибка работы с избранным:', error)
     }
   }
 
