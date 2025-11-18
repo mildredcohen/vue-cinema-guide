@@ -12,7 +12,26 @@
     </div>
 
     <!-- избранные фильмы -->
-    <ul v-else class="user-favorites__list">
+    <!-- <ul v-else class="user-favorites__list">
+      <li
+        v-for="movie in favoritesMovies"
+        :key="movie.id"
+        class="user-favorites__item"
+      >
+        избранный фильм
+        <MovieTopCard :movie="movie" class="user-favorites__card" />
+
+        удалить избранный фильм
+        <button
+          @click.stop="removeFromFavorites(movie.id)"
+          class="user-favorites__remove"
+          aria-label="Удалить из избранного"
+        >
+          <IconCrossSmall />
+        </button>
+      </li>
+    </ul> -->
+    <TransitionGroup v-else tag="ul" class="user-favorites__list">
       <li
         v-for="movie in favoritesMovies"
         :key="movie.id"
@@ -30,7 +49,7 @@
           <IconCrossSmall />
         </button>
       </li>
-    </ul>
+    </TransitionGroup>
   </div>
 </template>
 
@@ -73,9 +92,14 @@
 
   const removeFromFavorites = async (movieId: number) => {
     try {
+      const movieIndex = favoritesMovies.value.findIndex(movie => movie.id === movieId)
+      if (movieIndex !== -1) {
+        favoritesMovies.value.splice(movieIndex, 1)
+      }
+
       await favoritesAPI.removeFromFavorites(movieId)
 
-      await loadFavorites()
+      // await loadFavorites()
     } catch (error) {
       console.error('Ошибка удаления из избранного:', error)
     }
@@ -87,6 +111,24 @@
 </script>
 
 <style scoped lang="scss">
+  .v-move,
+  .v-enter-active,
+  .v-leave-active {
+    transition:
+      opacity $transition-300,
+      transform $transition-300;
+  }
+
+  .v-enter-from {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+
+  .v-leave-to {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+
   .user-favorites {
     &__loading {
       @include flex-center;

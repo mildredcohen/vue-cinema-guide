@@ -15,7 +15,7 @@
         </div>
 
         <!-- список фильмов по жанру -->
-        <ul class="genre__list">
+        <TransitionGroup tag="ul" class="genre__list">
           <li
             class="genre__item"
             v-for="movie in displayedMovies"
@@ -23,7 +23,7 @@
           >
             <MovieTopCard :movie="movie" class="genre__movie-top-card" />
           </li>
-        </ul>
+        </TransitionGroup>
 
         <!-- кнопка для загрузки дополнительных фильмов по жанру -->
         <BaseButton
@@ -115,6 +115,18 @@
 </script>
 
 <style lang="scss" scoped>
+  .v-move,
+  .v-enter-active,
+  .v-leave-active {
+    transition: opacity $transition-300, transform $transition-300;
+  }
+
+  .v-enter-from,
+  .v-leave-to {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+
   .genre {
     padding: 64px 0 160px;
 
